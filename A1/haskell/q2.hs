@@ -13,15 +13,6 @@ generateSound note =
   f = (1.0 * freq/32) * (2 ** ((fromIntegral (midi note) - 9)/12))
   t = [0,1.0/srate..(duration note)]
 
-testNote :: String -> String
-testNote s =
- show m ++ " : " ++ show d
- where
-  [a, b] = words s
-  m = (read :: String -> Int) a
-  d = (read :: String -> Float) b
-
-
 parseNote :: String -> Note
 parseNote s = Note m d
  where
