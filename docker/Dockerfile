@@ -4,8 +4,6 @@ RUN dnf -y install vim
 RUN yum install wget -y
 RUN yum install firefox -y
 RUN yum -y install curl cvs subversion make autoconf gcc gcc-c++ automake bzip2
-RUN yum -y install bitstream-vera-sans-mono-fonts tcl tcl-devel tk tk-devel jack-audio-connection-kit jack-audio-connection-kit-devel alsa-lib alsa-lib-devel libtool
-
 
 ARG PD_VERSION=0.52-2
 ARG PD_TARBALL=pd-$PD_VERSION.src.tar.gz

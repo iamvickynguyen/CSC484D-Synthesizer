@@ -1,0 +1,2 @@
+docker build -t synth .
+docker run -it --env="DISPLAY" --net=host gui
